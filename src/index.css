@@ -1,0 +1,274 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+:root{
+  padding: 0;
+  margin: 0;
+  --theamdark : rgb(35, 35, 35);
+  --theamdark1 : rgb(25, 25, 25);
+  --theamlight : rgb(255, 229, 237);
+  --theamlight1 : rgb(249, 249, 249);
+  --theammidium : rgb(249, 134, 186);
+  --theammidium1 : rgb(253, 195, 216);
+  --textlight:rgb(255, 255, 255);
+  --textmedium:rgb(134, 131, 131);
+  --textdark:rgb(13, 13, 13);
+
+}
+li{
+  list-style: none;
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+.wrapper{
+  height: auto;
+  width: 100%;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper-colom2{
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+#topbtn{
+  position: fixed;
+  left: 90%;
+  top: 90%;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background: #bd3b3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  box-shadow: 0 0 5px #fff;
+
+}
+#bottombtn{
+  position: fixed;
+  left: 90%;
+  top: 85%;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background: #5bbd3b;
+  box-shadow: 0 0 5px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+#downarrow{
+  background: #e61e1e00;
+  transform:rotate(90deg);
+  height: 19px;
+  width: 19px;
+  
+}
+/*  Card Box     */
+.shopinCards{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+/* HEADER SEARCH BAR */
+.search{
+  height: 80px;
+  background: var(--theamdark);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search div{
+  width: 80%;
+  height: 50px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  gap: 10px;background: #ffffff;
+  border: 2px solid rgb(148, 148, 148);
+}
+.search div #SearchItems{
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-radius:40px 40px;
+  border: none;
+  text-align: center;
+  padding: 0;
+  font-size: 20px;
+
+}
+.search div #SearchItems:focus{
+  border: none;
+  outline: none;
+}
+.search div p{
+  height: 50px;
+  width: 50px;
+  background: #000;
+  transform: rotate(45deg);
+  color: #ffffff;
+  font-size: 50px;
+}
+.search div img{
+  height: 45px;
+  width: 45px;
+  border-radius:25px;
+  padding:5px 2px;
+  cursor: pointer;
+  transform: scale(0.8);
+  filter: grayscale(0.6) contrast(0.1);
+}
+
+.likelist{
+  height: 45px;
+  width: 100px;
+  border: 5px solid rgb(199, 198, 199);
+  background: #f6f2f2;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+/* Card CSS */
+
+.Card-Container{
+  height:auto;
+  background: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(248, 197, 197);
+  margin:10px 5px;
+  display: inline-block;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  transition:height 0.8s ease-in;
+  
+}
+.card-img{
+  height: 250px;
+  background: #ffffff;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  overflow: hidden;
+}
+.card-img img{
+  height: 90%;
+  width: auto;
+  margin: auto;
+}
+.card-img img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.card-img .heart{
+  font-size: 5px;
+  margin: 0;
+  text-align: right;
+  width: 30px;
+  height:30px;
+  position: relative;
+  top: -15%;
+  left: 85%;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  z-index: 5;
+  text-align: center;
+  border-radius: 15px;
+}
+.card-img .hideHear{
+  width: 0;
+  opacity: 0;
+  
+}
+
+.Card-Container:hover .heart{
+  top: 0%;
+  width: 30px;
+  height:30px;
+  font-size: 20px;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
+}
+
+.card-2{
+  height: 120px;
+  background: #ffffff;
+  margin: 0;
+}
+.card-2 .brandName{
+  font-size: 19px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #353535;
+  margin: 0;
+}
+.card-2 .productName{
+  font-size: 20px;
+  color: #040404;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.card-2 .category{
+  color: #2e2e2e;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.card-2 .pricegrp{
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  background: #f9e0e0b0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card-2 .price{
+  text-align: center;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+.card-2 .price2{
+  text-decoration: line-through;
+  font-family: monospace;
+  font-size: 18px;
+  color: #2d2d2d;
+}
+.card-2 .shopCart{
+  font-size: 25px;
+  cursor: pointer;
+  font-style: normal;
+}
+.card-2 .shopCart .CartNone{
+  opacity: 0.1;
+}
